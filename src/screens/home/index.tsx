@@ -1,9 +1,10 @@
+import { Logo } from "../../components/logo";
 import { Header } from "./styles";
 
 export function Home() {
     return (
     <Header>
-        <h1>DevBills</h1>
+        <Logo/>
     </Header>
 );
 }

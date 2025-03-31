@@ -24,11 +24,17 @@
 				"noExplicitAny": "off"
 			},
 			"style": {
-				"useImportType": "off"
+				"useImportType": "off",
+				"useSelfClosingElements": "off",
+				"noNonNullAssertion": "off"
 			},
 			"correctness": {
 				"noUnusedImports": "error"
-			}
+			},
+			"a11y": {
+				"noSvgWithoutTitle": "off"
+			  }
+			
 		}
 	},
 	"javascript": {
