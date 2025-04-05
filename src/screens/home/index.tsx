@@ -4,6 +4,7 @@ import { Input } from "../../components/input";
 import { Logo } from "../../components/logo";
 import { Title } from "../../components/title";
 import { Filters, Header, InputGroup, Main, Section } from "./styles";
+import { ButtonIcon } from "../../components/button-icon";
 
 export function Home() {
     return (
@@ -31,7 +32,8 @@ export function Home() {
                         mask="dd/mm/yyyy"
                         replacement={{d:/\d/, m:/\d/, y:/\d/}}
                         variant="dark" label="Fim"
-                    />                    
+                    />
+                    <ButtonIcon/>                    
                 </InputGroup>
             </Filters>
         </Section>

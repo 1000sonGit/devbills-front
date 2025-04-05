@@ -17,16 +17,19 @@
 		"enabled": true
 	},
 	"linter": {
-		"enabled": true,
+		"enabled": true,		
 		"rules": {
 			"recommended": true,
 			"suspicious": {
 				"noExplicitAny": "off"
 			},
+			"complexity": {
+        		"useArrowFunction": "off"
+      		},
 			"style": {
 				"useImportType": "off",
 				"useSelfClosingElements": "off",
-				"noNonNullAssertion": "off"
+				"noNonNullAssertion": "off"				
 			},
 			"correctness": {
 				"noUnusedImports": "error"
