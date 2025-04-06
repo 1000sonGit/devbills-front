@@ -3,10 +3,11 @@ import { Button } from "../../components/button";
 import { Input } from "../../components/input";
 import { Logo } from "../../components/logo";
 import { Title } from "../../components/title";
-import { Balance, ChartAction, ChartContainer, ChartContent, 
-    Filters, Header, InputGroup, Main, Section } from "./styles";
+import { Aside, Balance, ChartAction, ChartContainer, ChartContent, 
+    Filters, Header, InputGroup, Main, SearchTransaction, Section } from "./styles";
 import { ButtonIcon } from "../../components/button-icon";
 import { Card } from "../../components/card";
+import { Transaction } from "../../components/transaction";
 
 export function Home() {
     return (
@@ -77,6 +78,21 @@ export function Home() {
                 <ChartContent></ChartContent>
             </ChartContainer>
         </Section>
+        <Aside>
+            <header>
+                <Title title="Transações" subtitle="Receitas de Gastos no Período"/>
+                <SearchTransaction>
+                    <Input variant="black" placeholder="Procurar Transação..."/>
+                    <ButtonIcon/> 
+                </SearchTransaction>
+                <Transaction 
+                id={1} 
+                amount={20000} 
+                date='09/09/2023' 
+                category={{title: 'Alimentação', color:'#ff33bb'}}                  
+                title='Mercado'/>               
+            </header>
+        </Aside>
     </Main>
     </>
 );
