@@ -4,7 +4,8 @@ import { Input } from "../../components/input";
 import { Logo } from "../../components/logo";
 import { Title } from "../../components/title";
 import { Aside, Balance, ChartAction, ChartContainer, ChartContent, 
-    Filters, Header, InputGroup, Main, SearchTransaction, Section } from "./styles";
+    Filters, Header, InputGroup, Main, SearchTransaction, Section, 
+    TransactionGroup} from "./styles";
 import { ButtonIcon } from "../../components/button-icon";
 import { Card } from "../../components/card";
 import { Transaction } from "../../components/transaction";
@@ -84,14 +85,38 @@ export function Home() {
                 <SearchTransaction>
                     <Input variant="black" placeholder="Procurar Transação..."/>
                     <ButtonIcon/> 
-                </SearchTransaction>
-                <Transaction 
-                id={1} 
-                amount={20000} 
-                date='09/09/2023' 
-                category={{title: 'Alimentação', color:'#ff33bb'}}                  
-                title='Mercado'/>               
+                </SearchTransaction>                              
             </header>
+            <TransactionGroup>
+                <Transaction 
+                    id={1} 
+                    amount={20000} 
+                    date='09/09/2023' 
+                    category={{title: 'Alimentação', color:'#ff33bb'}}                  
+                    title='Mercado'
+                />
+                <Transaction 
+                    id={1} 
+                    amount={20000} 
+                    date='09/09/2023' 
+                    category={{title: 'Alimentação', color:'#ff33bb'}}                  
+                    title='Mercado'
+                />
+                <Transaction 
+                    id={1} 
+                    amount={20000} 
+                    date='09/09/2023' 
+                    category={{title: 'Alimentação', color:'#ff33bb'}}                  
+                    title='Mercado'
+                />
+                <Transaction 
+                    id={1} 
+                    amount={20000} 
+                    date='09/09/2023' 
+                    category={{title: 'Alimentação', color:'#ff33bb'}}                  
+                    title='Mercado'
+                />
+            </TransactionGroup>
         </Aside>
     </Main>
     </>
