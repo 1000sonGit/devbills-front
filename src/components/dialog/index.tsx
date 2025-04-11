@@ -1,4 +1,4 @@
-import { Content, Overlay, Portal, Root, Trigger } from "@radix-ui/react-dialog";
+import { Content, Overlay, Portal, Root, Trigger } from "./styles";
 import { JSX, ReactNode } from "react";
 
 type DialogProps = {
@@ -11,7 +11,7 @@ type DialogProps = {
 export function Dialog({children, trigger, open, onOpenChange}: DialogProps) {
     return(
         <Root open={open} onOpenChange={onOpenChange}>
-            <Trigger>{trigger}</Trigger>
+            <Trigger asChild>{trigger}</Trigger>
             <Portal>
                 <Overlay/>
                 <Content>{children}</Content>

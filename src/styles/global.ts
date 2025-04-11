@@ -10,8 +10,16 @@ export default createGlobalStyle`
     }
 
     body {
+        position: relative !important;
+        overflow-x: hidden; /* Previne scroll horizontal */
         -webkit-font-smoothing: antialiased;
         background-color: ${theme.colors.black};
+        min-height: 100vh;
+    }
+    /* Remove transform/overflow em elementos pais */
+    #root, .App, main, section {
+    transform: none !important;
+    overflow: visible !important;
     }
 
     body, input, button, select {
@@ -29,5 +37,9 @@ export default createGlobalStyle`
 
     button {
         cursor: pointer;
+    }
+
+    [data-radix-portal] {
+        display: flex !important;
     }
 `

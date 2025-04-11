@@ -1,5 +1,4 @@
 import { InputMask } from "@react-input/mask";
-import { Button } from "../../components/button";
 import { Input } from "../../components/input";
 import { Logo } from "../../components/logo";
 import { Title } from "../../components/title";
@@ -9,6 +8,8 @@ import { Aside, Balance, ChartAction, ChartContainer, ChartContent,
 import { ButtonIcon } from "../../components/button-icon";
 import { Card } from "../../components/card";
 import { Transaction } from "../../components/transaction";
+import { CreateCategoryDialog } from "../../components/create-category-dialog";
+import { CreateTransactionDialog } from "../../components/create-transaction-dialog";
 
 export function Home() {
     return (
@@ -16,8 +17,8 @@ export function Home() {
     <Header>
         <Logo/>
         <div>
-            <Button>Nova transação</Button>
-            <Button>Nova categoria</Button>
+            <CreateTransactionDialog/>
+            <CreateCategoryDialog/>            
         </div>
     </Header>
     <Main>
