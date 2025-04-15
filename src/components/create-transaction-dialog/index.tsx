@@ -3,7 +3,8 @@ import { Dialog } from "../dialog";
 import { Button } from "../button";
 import { Title } from "../title";
 import { Input } from "../input";
-import { Container, Content, CurrencyInput, InputGroup, RadioForm, RadioGroup } from "./styles";
+import { Container, Content, CurrencyInput, 
+    InputGroup, RadioForm, RadioGroup } from "./styles";
 import { InputMask } from "@react-input/mask";
 
 export function CreateTransactionDialog() {
@@ -38,7 +39,11 @@ export function CreateTransactionDialog() {
                                 <option value='null'>Selecione uma categoria...</option>
                             </select>
                         </InputGroup>
-                        <Input style={{width: '90%'}} label="Nome" placeholder="Nome da transação..."/>
+                        <Input 
+                        style={{width: '90%'}} 
+                        label="Nome" 
+                        placeholder="Nome da transação..."
+                        />
                         <InputGroup>
                             <label>Valor</label>  
                             <CurrencyInput 
@@ -59,11 +64,20 @@ export function CreateTransactionDialog() {
                         
                         <RadioForm>
                             <RadioGroup>
-                                <input type='radio' id='income' value='income' name='type'/>
-                                <label htmlFor='income'>Receita</label>
+                                <input 
+                                type='radio' 
+                                id='income' 
+                                value='income' 
+                                name='type'/>
+                                <label 
+                                htmlFor='income'>Receita</label>
                             </RadioGroup>
                             <RadioGroup>
-                                <input type='radio' id='expense' value='expense' name='type'/>
+                                <input 
+                                type='radio' 
+                                id='expense' 
+                                value='expense' 
+                                name='type'/>
                                 <label htmlFor='expense'>Gasto</label>
                             </RadioGroup>
                         </RadioForm>
